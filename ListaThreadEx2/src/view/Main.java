@@ -4,17 +4,17 @@
  * and open the template in the editor.
  */
 package view;
-
-import controller.Thread;
-
+import controller.Threadid;
 /**
  *
  * @author bruno
  */
 public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
+        for(int op=0;op<5;op++ ){
+            //Threadid threadId =new   Threadid(idThread);
+            Thread tid =new  Threadid(op);
+            tid.start();
+        }
+    }
 }
